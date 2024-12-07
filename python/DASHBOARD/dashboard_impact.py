@@ -4,8 +4,8 @@ import graph_impact
 
 def dashboard_impact(label,FF, RF, FF_SD, RF_SD, chart_to_images,all_filtered_data) :
     with st.sidebar:
-        selected_shoe_type = st.multiselect('Select Type of Footwear', label['category'].unique())
-        selected_chart_names = st.multiselect('Select Models',sorted(label[label['category'].isin(selected_shoe_type)]['chart_name']))
+        selected_shoe_type = st.selectbox('Select Type of Footwear', label['category'].unique())
+        selected_chart_names = st.multiselect('Select Models',sorted(label[label['category'] == selected_shoe_type]['chart_name']))
 
         if selected_chart_names:
             st.markdown("<ul>", unsafe_allow_html=True)
@@ -78,7 +78,7 @@ def dashboard_impact(label,FF, RF, FF_SD, RF_SD, chart_to_images,all_filtered_da
     'Accel (g)', 'Max Pen (%)', 'Max Pen (mm)', 'Dwell T (ms)']   
 
     if selected_shoe_type != 'SPECIMEN':     
-        chart_name = list(label[label['category'].isin(selected_shoe_type)]['chart_name'])
+        chart_name = list(label[label['category'] == selected_shoe_type]['chart_name'])
         FILT_RF = RF[RF['chart_name'].isin(chart_name)]
         FILT_FF = FF[FF['chart_name'].isin(chart_name)]
         
@@ -187,7 +187,7 @@ def dashboard_impact(label,FF, RF, FF_SD, RF_SD, chart_to_images,all_filtered_da
             st.plotly_chart(deform_p_fig, use_container_width=True, key="deform_p_fig")
             
     elif selected_shoe_type == 'SPECIMEN':
-        chart_name = list(label[label['category'].isin(selected_shoe_type)]['chart_name'])
+        chart_name = list(label[label['category'] == selected_shoe_type]['chart_name'])
         FILT_FF = FF[FF['chart_name'].isin(chart_name)]
         filt_ff_df = FILT_FF[FILT_FF['chart_name'].isin(selected_chart_names)][FF_COLS]
         # ff_columns = [('ForeFoot', col) if col not in ['Test Date', 'Mass (g)'] else ('', col) for col in filt_ff_df.columns]
