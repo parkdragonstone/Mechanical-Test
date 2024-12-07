@@ -34,9 +34,9 @@ def dashboard_impact(label,FF, RF, FF_SD, RF_SD, chart_to_images,all_filtered_da
 
             with col1:
                 st.markdown("**ASTM F 1976-13 (2013)**")
-                st.write(f"**Drop Mass** : {info_table['Missile Mass (kg)'].values[0]} kg")
-                st.write(f"**Drop Height** : {int(info_table['Drop Height (mm)'].values[0])} mm")
-                st.write(f"**Missile**: {int(info_table['Missile Head Diameter (mm)'].values[0])}mm diameter ({info_table['Missile Head Type'].values[0]} tup)")
+                st.write(f"**Drop Mass** : {info_table['Missile Mass (kg)']} kg")
+                st.write(f"**Drop Height** : {int(info_table['Drop Height (mm)'])} mm")
+                st.write(f"**Missile**: {int(info_table['Missile Head Diameter (mm)'])}mm diameter ({info_table['Missile Head Type']} tup)")
                 st.write("**Impact Number**: Pre-Impact : 25 / Impact for data collection : 5")
 
             # 오른쪽 이미지
