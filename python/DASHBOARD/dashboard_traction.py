@@ -17,7 +17,7 @@ def dashboard_traction(TRACTION_DF, TRACTION_FILT):
             st.write('No models selected.')
             
             
-    st.title("FAST CENTER - TRACTION TEST")
+    st.title("oooo CENTER - TRACTION TEST")
     
     TRACTION_SELECT = TRACTION_DF[TRACTION_DF['chart_name'].isin(selected_chart_names)]
     SURFACES = TRACTION_SELECT['surface_no'].unique()

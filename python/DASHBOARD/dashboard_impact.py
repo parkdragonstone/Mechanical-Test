@@ -16,7 +16,7 @@ def dashboard_impact(label,FF, RF, FF_SD, RF_SD, chart_to_images,all_filtered_da
             st.write('No models selected.')
             
     # 페이지 제목 설정
-    st.title("FAST CENTER - IMPACT TEST")
+    st.title("oooo CENTER - IMPACT TEST")
 
     # 선택된 모델 중 하나를 다시 선택하는 selectbox
     if selected_chart_names:

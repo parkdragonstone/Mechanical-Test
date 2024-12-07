@@ -19,7 +19,7 @@ def dashboard_drag(DRAG):
     real_fig = graph_drag.drag_graph(DRAG, selected_chart_names, "DRAG Test (Real Mass)")
     zero_fig = graph_drag.drag_graph(DRAG, selected_chart_names, "Drag Test (Set Zero)")
     diff_fig = graph_drag.drag_graph(DRAG, selected_chart_names, "Drag Teset (Differential)")
-    st.title("FAST CENTER - DRAG TEST")
+    st.title("oooo CENTER DRAG TEST")
     
     with st.container(border=True):
         st.markdown("""

@@ -19,7 +19,7 @@ def dashboard_flex(flex_data, flex_labels, FLEX_DF):
     flex_fig = graph_flex.flex_graph(flex_data, FLEX_SELECT, selected_chart_names)
     
     # 페이지 제목 설정
-    st.title("FAST CENTER - FLEX TEST")
+    st.title("oooo CENTER - FLEX TEST")
     
     with st.container(border=True):
         st.markdown("""
