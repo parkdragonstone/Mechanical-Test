@@ -1,0 +1,22 @@
+IMPACT TEST RESULTS
+
+Date and Time: 2021-07-22 ¿ÀÀü 11:15
+Material ID: 10005_1_RF_20210722				File: 
+Samp Rate (Hz): 3000				Freq Cut (Hz): 300
+Missile Head Diam (mm): 45.0				Missile Head Radius (mm): 0.0
+Drop Height (mm): 50.0				Missile Mass (kg): 8.5
+Material Thickness: 28.4				Pre-Impacts: 25
+Temperature: 24.0				Humidity: 48.0
+Cycle Rate (Hz): 9999.0
+Shoe Mass (g): 350.0
+Sole Mass (g): 0.0
+Inside Shoe Length (mm): 0.0
+Notes: 
+=========================================================================================
+Trial	Accel (g)	Peak T (ms)	Press (kPa)	Force (N)	Max Pen (%)	Dwell T (ms)	Vel (cm/s)	E Ret (%)	Max Pen (mm)	V-post (cm/s)	Total Imp E (J)	Drop Ht (mm)
+=========================================================================================
+  1.00	 11.67	 19.00	611.90	973.18	 54.19	 44.33	104.44	 73.90	 15.40	-83.29	  5.87	 54.99
+=====================================================================================
+  Ave	 11.67	 19.00	611.90	973.18	 54.19	 44.33	104.44	 73.90	 15.40	-83.29	  5.87	 54.99
+
+  SD	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00	  0.00

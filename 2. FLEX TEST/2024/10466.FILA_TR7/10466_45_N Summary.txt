@@ -1,0 +1,4 @@
+Shoe	Peak Moment	Stiffness	E Input	E Output	E Return	Flex Neutral Angle
+	Nm	Nm/deg	J	J	%	degrees
+10466_45_N_1	4.855	0.138	1.605	0.275	17.103	9.833
+10466_45_N_2	4.206	0.122	1.416	0.318	22.441	9.955
